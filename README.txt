@@ -6,7 +6,8 @@ This is a library for the 0.96" 16-bit Color OLED with SSD1331 driver chip
 These displays use SPI to communicate, 4 or 5 pins are required to  
 interface
 
-!!!! Adapted for Spark Core by Paul Kourany, Nov 9, 2014  !!!
+!!! Adapted for Spark Core by Paul Kourany, Nov 9, 2014  !!!
+!!! REQUIRES Adafruit_GFX library !!!
 
 Adafruit invests time and resources providing this open source code, 
 please support Adafruit and open-source hardware by purchasing 
