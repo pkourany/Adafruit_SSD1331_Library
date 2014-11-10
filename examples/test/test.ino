@@ -51,13 +51,14 @@
 #endif
 
 // Option 1: use any pins but a little slower
-Adafruit_SSD1331 display = Adafruit_SSD1331(cs, dc, mosi, sclk, rst);  
+//Adafruit_SSD1331 display = Adafruit_SSD1331(cs, dc, mosi, sclk, rst);  
 
 // Option 2: must use the hardware SPI pins 
 // (for UNO thats sclk = 13 and sid = 11) and pin 10 must be 
 // an output. This is much faster - also required if you want
 // to use the microSD card (see the image drawing example)
-//Adafruit_SSD1331 display = Adafruit_SSD1331(cs, dc, rst);
+/ (for Spark Core, cs = A2, dc = D3, rst = D2)
+Adafruit_SSD1331 display = Adafruit_SSD1331(cs, dc, rst);
 
 float p = 3.1415926;
 
