@@ -24,7 +24,9 @@
 #endif
 #endif //Spark
 
-#if !defined (SPARK)
+#if defined (SPARK)
+#define _BV(b) (1<<(b))
+#else
 #ifdef __SAM3X8E__
 typedef volatile RwReg PortReg;
 typedef uint32_t PortMask;
